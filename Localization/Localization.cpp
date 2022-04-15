@@ -1,4 +1,4 @@
-#include "pch.h"
+
 #include "Localization.h"
 
 string Localization::getCurrentLocale() {

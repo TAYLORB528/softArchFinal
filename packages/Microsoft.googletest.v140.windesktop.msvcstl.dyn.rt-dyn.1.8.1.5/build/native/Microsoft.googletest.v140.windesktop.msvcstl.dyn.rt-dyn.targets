@@ -10,10 +10,10 @@
   </ItemGroup>
   <ItemDefinitionGroup Condition="'$(Disable-Microsoft-googletest-v140-windesktop-msvcstl-dyn-rt-dyn)' == ''">
     <Link>
-      <AdditionalDependencies Condition="'$(Configuration)' == 'Debug' And '$(Platform)' == 'x64'">$(SolutionDir)GtestShorterPath\gtestd.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalDependencies Condition="'$(Configuration)' == 'Debug' And '$(Platform)' == 'x64' And '$(Microsoft-GoogleTest-Disable-gtest_main)' == ''">$(SolutionDir)GtestShorterPath\gtest_maind.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalDependencies Condition="'$(Configuration)' != 'Debug' And '$(Platform)' == 'x64'">$(SolutionDir)GtestShorterPath\Release\gtest.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalDependencies Condition="'$(Configuration)' != 'Debug' And '$(Platform)' == 'x64' And '$(Microsoft-GoogleTest-Disable-gtest_main)' == ''">$(SolutionDir)GtestShorterPath\gtest_main.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies Condition="'$(Configuration)' == 'Debug' And '$(Platform)' == 'x64'">$(MSBuildThisFileDirectory)..\..\lib\native\v140\windesktop\msvcstl\dyn\rt-dyn\x64\Debug\gtestd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies Condition="'$(Configuration)' == 'Debug' And '$(Platform)' == 'x64' And '$(Microsoft-GoogleTest-Disable-gtest_main)' == ''">$(MSBuildThisFileDirectory)..\..\lib\native\v140\windesktop\msvcstl\dyn\rt-dyn\x64\Debug\gtest_maind.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies Condition="'$(Configuration)' != 'Debug' And '$(Platform)' == 'x64'">$(MSBuildThisFileDirectory)..\..\lib\native\v140\windesktop\msvcstl\dyn\rt-dyn\x64\Release\gtest.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies Condition="'$(Configuration)' != 'Debug' And '$(Platform)' == 'x64' And '$(Microsoft-GoogleTest-Disable-gtest_main)' == ''">$(MSBuildThisFileDirectory)..\..\lib\native\v140\windesktop\msvcstl\dyn\rt-dyn\x64\Release\gtest_main.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <AdditionalDependencies Condition="'$(Configuration)' == 'Debug' And ('$(Platform)' == 'Win32' Or '$(Platform)' == 'x86')">$(MSBuildThisFileDirectory)..\..\lib\native\v140\windesktop\msvcstl\dyn\rt-dyn\x86\Debug\gtestd.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <AdditionalDependencies Condition="'$(Configuration)' == 'Debug' And ('$(Platform)' == 'Win32' Or '$(Platform)' == 'x86') And '$(Microsoft-GoogleTest-Disable-gtest_main)' == ''">$(MSBuildThisFileDirectory)..\..\lib\native\v140\windesktop\msvcstl\dyn\rt-dyn\x86\Debug\gtest_maind.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <AdditionalDependencies Condition="'$(Configuration)' != 'Debug' And ('$(Platform)' == 'Win32' Or '$(Platform)' == 'x86')">$(MSBuildThisFileDirectory)..\..\lib\native\v140\windesktop\msvcstl\dyn\rt-dyn\x86\Release\gtest.lib;%(AdditionalDependencies)</AdditionalDependencies>
@@ -24,10 +24,10 @@
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemGroup Condition="'$(Configuration)' == 'Debug' And '$(Platform)' == 'x64' And '$(Disable-Microsoft-googletest-v140-windesktop-msvcstl-dyn-rt-dyn)' == ''">
-          <ReferenceCopyLocalPaths Include="$(SolutionDir)GtestShorterPath\gtestd.dll" />
-      <ReferenceCopyLocalPaths Include="$(SolutionDir)GtestShorterPath\gtest_maind.dll" Condition="'$(Microsoft-GoogleTest-Disable-gtest_main)' == ''" />
-      <ReferenceCopyLocalPaths Include="$(SolutionDir)GtestShorterPath\\gtestd.pdb" />
-      <ReferenceCopyLocalPaths Condition="'$(Microsoft-GoogleTest-Disable-gtest_main)' == ''" Include="$(SolutionDir)GtestShorterPath\\gtest_maind.pdb" />
+          <ReferenceCopyLocalPaths Include="$(MSBuildThisFileDirectory)..\..\lib\native\v140\windesktop\msvcstl\dyn\rt-dyn\x64\Debug\gtestd.dll" />
+      <ReferenceCopyLocalPaths Include="$(MSBuildThisFileDirectory)..\..\lib\native\v140\windesktop\msvcstl\dyn\rt-dyn\x64\Debug\gtest_maind.dll" Condition="'$(Microsoft-GoogleTest-Disable-gtest_main)' == ''" />
+      <ReferenceCopyLocalPaths Include="$(MSBuildThisFileDirectory)..\..\lib\native\v140\windesktop\msvcstl\dyn\rt-dyn\x64\Debug\gtestd.pdb" />
+      <ReferenceCopyLocalPaths Condition="'$(Microsoft-GoogleTest-Disable-gtest_main)' == ''" Include="$(MSBuildThisFileDirectory)..\..\lib\native\v140\windesktop\msvcstl\dyn\rt-dyn\x64\Debug\gtest_maind.pdb" />
       </ItemGroup>
   <ItemGroup Condition="'$(Configuration)' != 'Debug' And '$(Platform)' == 'x64' And '$(Disable-Microsoft-googletest-v140-windesktop-msvcstl-dyn-rt-dyn)' == ''">
           <ReferenceCopyLocalPaths Include="$(MSBuildThisFileDirectory)..\..\lib\native\v140\windesktop\msvcstl\dyn\rt-dyn\x64\Release\gtest.dll" />
