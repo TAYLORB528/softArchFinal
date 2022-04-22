@@ -20,3 +20,7 @@ We were able to accomplish all 'required' requirements, which were: having all l
 ![image](https://user-images.githubusercontent.com/89398319/164760458-67377883-5191-42fe-9c9a-0a5e1bf921fd.png)
 
 As you can see above, we have translated various messages outputted to the console from libraries not contained in the core layer.
+
+![image](https://user-images.githubusercontent.com/89398319/164760755-0f68260b-ae56-4f15-84a2-a4be6cded0cc.png)
+
+As demonstrated here the in UI library. Any library that wishes to use the localization need simply create a localization object and call the translate string method using it.
