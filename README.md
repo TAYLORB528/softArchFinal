@@ -23,4 +23,4 @@ As you can see above, we have translated various messages outputted to the conso
 
 ![image](https://user-images.githubusercontent.com/89398319/164760755-0f68260b-ae56-4f15-84a2-a4be6cded0cc.png)
 
-As demonstrated here the in UI library. Any library that wishes to use the localization need simply create a localization object and call the translate string method using it.
+As demonstrated above in the UI library, any library that wishes to use the localization need simply create a localization object and call the translate string method using it.
