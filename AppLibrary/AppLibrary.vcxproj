@@ -125,6 +125,9 @@
     <ProjectReference Include="..\Journaling\Journaling.vcxproj">
       <Project>{3ed245ab-f27b-4166-8e34-f5f0f355bf0a}</Project>
     </ProjectReference>
+    <ProjectReference Include="..\Localization\Localization.vcxproj">
+      <Project>{f57f137f-dd04-4552-ab6f-26afbb14a191}</Project>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

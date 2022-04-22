@@ -1,6 +1,7 @@
 #include "Block.h"
 #include <fstream>
 #include "..\Core\StringUtils.h"
+#include "..\Localization\Localization.h"
 
 
 void ProcessBlock(std::ifstream& streamObject)

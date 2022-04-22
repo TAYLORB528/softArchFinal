@@ -16,7 +16,7 @@ TEST(TranslateString, returnAGermanString)
 {
 	std::string str = "Hello";
 	Localization* loc = new Localization();
-	str = loc->translateString(str);
+	str = loc->translateString("translate",str);
 
 	EXPECT_EQ(str, "Hello ,but now in German");
 }

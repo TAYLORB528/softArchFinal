@@ -24,6 +24,6 @@ public:
 	string getCurrentLocale();
 	void setCurrentLocale(string);
 
-	string translateString(string);
+	string translateString(string, string);
 
 };

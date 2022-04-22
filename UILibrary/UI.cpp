@@ -11,6 +11,7 @@
 #include "..\Core\CoreUtils.h"
 #include "..\FeatureOpsUI\BlockBuilderUI.h"
 #include "..\AppLibrary\Journaling_BlockBuilder.h"
+#include "..\Localization\Localization.h"
 
 UI::UI()
 {
@@ -19,13 +20,15 @@ UI::UI()
 
 void UI::Init()
 {
+	Localization* loc = new Localization();
+
 	CoreSession::GetInstance().SetupDefaultObservers();
 
-	CoreSession::GetInstance().CreateMessage("Hello World! :D");
-	CoreSession::GetInstance().CreateMessage("The weather is hot today! :p");
+	CoreSession::GetInstance().CreateMessage(loc->translateString("translate", "Hello World! :D"));
+	CoreSession::GetInstance().CreateMessage(loc->translateString("translate", "The weather is hot today! :p"));
 	observer4 = new Observer(CoreSession::GetInstance(), Observer::ClosePart);
 	observer5 = new Observer(CoreSession::GetInstance(), Observer::SavePart);
-	CoreSession::GetInstance().CreateMessage("My new car is great! ;)");
+	CoreSession::GetInstance().CreateMessage(loc->translateString("translate", "My new car is great! ;)"));
 
 }
 
